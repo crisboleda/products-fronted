@@ -1,54 +1,58 @@
-# React + TypeScript + Vite
+# CRUD de Productos con React y TypeScript - Igloolab
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es una aplicación CRUD (Crear, Leer, Actualizar, Eliminar) de productos desarrollada con **React**, **TypeScript** y **Context API**, utilizando **fetch** para las peticiones HTTP.
 
-Currently, two official plugins are available:
+## Descripción
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+La aplicación permite gestionar productos con las siguientes funcionalidades:
 
-## Expanding the ESLint configuration
+- Listar productos.
+- Crear productos.
+- Editar productos.
+- Eliminar productos.
+- Manejo de errores del servidor con validaciones.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## Tecnologías Usadas
+
+- React
+- TypeScript
+- Context API
+- Fetch API
+- React Router
+- CSS para los estilos
+
+---
+
+### Instalación
+
+## 1. Clona este repositorio:
+```bash
+git clone https://github.com/tu-usuario/nombre-repositorio.git
+cd nombre-repositorio
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+## 2. Instala las dependencias:
+```bash
+npm install
 ```
+
+## 3. Ejecución
+Para iniciar la aplicación en modo desarrollo, usa el siguiente comando:
+```bash
+npm run dev
+```
+La aplicación se ejecutará en:
+```bash
+http://localhost:5173
+```
+
+### Configuración del Servidor
+```bash
+http://localhost:3000
+```
+Asegúrate de que el servidor esté activo antes de iniciar la aplicación.
+
+### Licencia
+Este proyecto se encuentra bajo la licencia MIT.
